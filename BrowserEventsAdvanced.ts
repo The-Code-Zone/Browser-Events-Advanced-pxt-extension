@@ -196,4 +196,9 @@ namespace browserEvents{
     export function getMouseSceneY(): number {
         return getMouseCameraY() + scene.cameraProperty(CameraProperty.Top)
     }    
+
+
+    export function spriteFollowMousePointer(sprite: Sprite): void {
+        
+    }
 }
