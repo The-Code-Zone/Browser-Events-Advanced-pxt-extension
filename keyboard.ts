@@ -209,11 +209,13 @@ namespace browserEvents {
         protected pressListeners: (() => void)[];
         protected releaseHandler: () => void;
         protected releaseListeners: (() => void)[];
+        private keyId: number;
 
         constructor(public id: number) {
             control.onEvent(Event.KeyUp, this.id, () => this.setPressed(false), 16);
             control.onEvent(Event.KeyDown, this.id, () => this.setPressed(true), 16);
 
+            this.keyId = id;
             this._pressed = false;
             this.pressListeners = [];
             this.releaseListeners = [];
@@ -238,6 +240,8 @@ namespace browserEvents {
                 }
             }
         }
+
+        public getKeyId(){return this.keyId};
 
         //% blockId=browserEvents_key_onEvent
         //% block="on $this key $event"
@@ -478,4 +482,30 @@ namespace browserEvents {
 
     //% fixedInstance whenUsed
     export const Any = new KeyButton(0);
+
+    // export let keyButtons: KeyButton[] = [
+    //     A, B, C, D, E, F, G, H, I, J, K, L, M,
+    //     N, O, P, Q, R, S, T, U, V, W, X, Y, Z,
+    //     Zero, One, Two, Three, Four, Five,
+    //     Six, Seven, Eight, Nine, 
+    //     Shift, Enter, CapsLock, Tab, Control,
+    //     Meta, Alt, ArrowUp, ArrowDown,
+    //     ArrowLeft, ArrowRight, BackTick, Hyphen,
+    //     Equals, OpenBracket, CloseBracket, 
+    //     BackSlash, Space, PageUp, SemiColon,
+    //     Apostrophe, Comma, Period, ForwardSlash,
+    //     PageDown, End, Home, Any
+    // ]
+
+    // export let mostRecentLetter: string;
+
+    // export function setupKeyboardInput(){
+    //     for (let keyButton of keyButtons) {
+    //         keyButton.onEvent(KeyEvent.Pressed, () => {
+    //             mostRecentLetter = keyToString(keyButton.getKeyId())
+    //             console.log(mostRecentLetter)
+    //         })
+    //     }
+    // }
+
 }

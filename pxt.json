@@ -12,7 +12,8 @@
         "keyboard.ts",
         "shims.d.ts",
         "images.g.jres",
-        "images.g.ts"
+        "images.g.ts",
+        "TilesExtended.ts"
     ],
     "testFiles": [
         "test.ts"
