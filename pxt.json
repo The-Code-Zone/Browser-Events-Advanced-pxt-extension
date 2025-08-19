@@ -10,7 +10,9 @@
         "README.md",
         "BrowserEventsAdvanced.ts",
         "keyboard.ts",
-        "shims.d.ts"
+        "shims.d.ts",
+        "images.g.jres",
+        "images.g.ts"
     ],
     "testFiles": [
         "test.ts"
