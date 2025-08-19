@@ -1,4 +1,4 @@
-// meta={"simUrl":"/simulator.html","cdnUrl":"/","version":"0.2.0","target":"arcade","targetVersion":"2.0.3","repo":"tomhausen/browser-events-advanced"}
+// meta={"simUrl":"/simulator.html","cdnUrl":"/","version":"0.2.1","target":"arcade","targetVersion":"2.0.3","repo":"tomhausen/browser-events-advanced"}
 // total=1263103 new=6.11% cached=88.28% other=5.61%
 (function (ectx) {
 'use strict';
@@ -429,7 +429,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P118776(s) {
+function _main___P120818(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -857,13 +857,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P118776.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P118776.continuations = [  ]
+_main___P120818.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P120818.continuations = [  ]
 
-function _main___P118776_mk(s) {
+function _main___P120818_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P118776, depth: s.depth + 1,
+        parent: s, fn: _main___P120818, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -42714,5 +42714,5 @@ const sprites_BaseSpriteSayRenderer__C98687_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["ClickCollider___100776","colliderDot___103800"])
 
-return _main___P118776
+return _main___P120818
 })
