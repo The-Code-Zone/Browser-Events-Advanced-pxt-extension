@@ -1,6 +1,10 @@
 
-namespace tiles{
+namespace tiles {
 
+    //% blockId=scrollTilemapWithMouse
+    //% block="scroll tilemap at speed $scrollSpeed when mouse $buffer from edge"
+    //% group="Tilemaps"
+    //% weight=0
     export function scrollTilemapWithMouse(scrollSpeed = 3, buffer = 20){
 
         game.onUpdate( () => {
