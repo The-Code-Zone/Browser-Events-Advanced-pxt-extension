@@ -1,4 +1,4 @@
-// meta={"simUrl":"/simulator.html","cdnUrl":"/","version":"0.2.2","target":"arcade","targetVersion":"2.0.3","repo":"tomhausen/browser-events-advanced"}
+// meta={"simUrl":"/simulator.html","cdnUrl":"/","version":"0.2.3","target":"arcade","targetVersion":"2.0.3","repo":"tomhausen/browser-events-advanced"}
 // total=1289760 new=8.54% cached=85.82% other=5.64%
 (function (ectx) {
 'use strict';
@@ -434,7 +434,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P48143(s) {
+function _main___P48327(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1495,13 +1495,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P48143.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P48143.continuations = [  ]
+_main___P48327.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P48327.continuations = [  ]
 
-function _main___P48143_mk(s) {
+function _main___P48327_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P48143, depth: s.depth + 1,
+        parent: s, fn: _main___P48327, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2654,11 +2654,11 @@ switch (step) {
   case 0:
 
     s.handler___47676 = undefined;
-    s.unnamed1476___U1 = undefined;
-    s.unnamed1477___U2 = undefined;
+    s.unnamed1560___U1 = undefined;
+    s.unnamed1561___U2 = undefined;
     s.handler___47685 = undefined;
-    s.unnamed1478___U4 = undefined;
-    s.unnamed1479___U5 = undefined;
+    s.unnamed1562___U4 = undefined;
+    s.unnamed1563___U5 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -2690,15 +2690,15 @@ switch (step) {
   case 2:
     s.handler___47676 = (undefined);
     r0 = s.arg0.fields["pressListeners"];
-    s.unnamed1476___U1 = (r0);
-    s.unnamed1477___U2 = (0);
+    s.unnamed1560___U1 = (r0);
+    s.unnamed1561___U2 = (0);
   case 3:
-    s.tmp_0 = r0 = s.unnamed1477___U2;
-    r0 = pxsim_Array__length(s.unnamed1476___U1);
+    s.tmp_0 = r0 = s.unnamed1561___U2;
+    r0 = pxsim_Array__length(s.unnamed1560___U1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 4; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed1476___U1, s.unnamed1477___U2);
+    r0 = pxsim_Array__getAt(s.unnamed1560___U1, s.unnamed1561___U2);
     s.handler___47676 = (r0);
     s.tmp_2 = lambda_1_mk(s);
     s.tmp_2.argL = s.handler___47676;
@@ -2706,11 +2706,11 @@ switch (step) {
     s.callLocIdx = 69; s.pc = 12; return s.tmp_2;
   case 12:
     r0 = s.retval;
-    r0 = (s.unnamed1477___U2 + 1);
-    s.unnamed1477___U2 = (r0);
+    r0 = (s.unnamed1561___U2 + 1);
+    s.unnamed1561___U2 = (r0);
     { step = 3; continue; }
   case 4:
-    s.unnamed1476___U1 = (undefined);
+    s.unnamed1560___U1 = (undefined);
     { step = 10; continue; }
   case 5:
     r0 = s.arg0.fields["releaseHandler"];
@@ -2734,15 +2734,15 @@ switch (step) {
   case 7:
     s.handler___47685 = (undefined);
     r0 = s.arg0.fields["releaseListeners"];
-    s.unnamed1478___U4 = (r0);
-    s.unnamed1479___U5 = (0);
+    s.unnamed1562___U4 = (r0);
+    s.unnamed1563___U5 = (0);
   case 8:
-    s.tmp_0 = r0 = s.unnamed1479___U5;
-    r0 = pxsim_Array__length(s.unnamed1478___U4);
+    s.tmp_0 = r0 = s.unnamed1563___U5;
+    r0 = pxsim_Array__length(s.unnamed1562___U4);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 9; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed1478___U4, s.unnamed1479___U5);
+    r0 = pxsim_Array__getAt(s.unnamed1562___U4, s.unnamed1563___U5);
     s.handler___47685 = (r0);
     s.tmp_2 = lambda_1_mk(s);
     s.tmp_2.argL = s.handler___47685;
@@ -2750,11 +2750,11 @@ switch (step) {
     s.callLocIdx = 71; s.pc = 14; return s.tmp_2;
   case 14:
     r0 = s.retval;
-    r0 = (s.unnamed1479___U5 + 1);
-    s.unnamed1479___U5 = (r0);
+    r0 = (s.unnamed1563___U5 + 1);
+    s.unnamed1563___U5 = (r0);
     { step = 8; continue; }
   case 9:
-    s.unnamed1478___U4 = (undefined);
+    s.unnamed1562___U4 = (undefined);
   case 10:
     r0 = undefined;
     return leave(s, r0)
@@ -2771,11 +2771,11 @@ function browserEvents_KeyButton_setPressed__P47628_mk(s) {
   tmp_1: undefined,
   tmp_2: undefined,
   handler___47676: undefined,
-  unnamed1476___U1: undefined,
-  unnamed1477___U2: undefined,
+  unnamed1560___U1: undefined,
+  unnamed1561___U2: undefined,
   handler___47685: undefined,
-  unnamed1478___U4: undefined,
-  unnamed1479___U5: undefined,
+  unnamed1562___U4: undefined,
+  unnamed1563___U5: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -43688,5 +43688,5 @@ const sprites_BaseSpriteSayRenderer__C2260_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["ClickCollider___4349","colliderDot___7372","keyButtons___48012","A___47757","B___47761","C___47765","D___47769","E___47773","F___47777","G___47781","H___47785","I___47789","J___47793","K___47797","L___47801","M___47805","N___47809","O___47813","P___47817","Q___47821","R___47825","S___47829","T___47833","U___47837","V___47841","W___47845","X___47849","Y___47853","Z___47857","Zero___47861","One___47865","Two___47869","Three___47873","Four___47877","Five___47881","Six___47885","Seven___47889","Eight___47893","Nine___47897","Shift___47901","Enter___47905","CapsLock___47909","Tab___47913","Control___47917","Meta___47921","Alt___47925","ArrowUp___47929","ArrowDown___47933","ArrowLeft___47937","ArrowRight___47941","BackTick___47945","Hyphen___47949","Equals___47953","OpenBracket___47957","CloseBracket___47961","BackSlash___47965","Space___47969","PageUp___47973","SemiColon___47977","Apostrophe___47981","Comma___47985","Period___47989","ForwardSlash___47993","PageDown___47997","End___48001","Home___48005"])
 
-return _main___P48143
+return _main___P48327
 })
