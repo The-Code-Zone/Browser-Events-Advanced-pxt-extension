@@ -1,13 +1,14 @@
-
-namespace tiles {
+namespace scene {
 
     //% blockId=scrollTilemapWithMouse
     //% block="scroll tilemap at speed $scrollSpeed when mouse $buffer from edge"
+    //% scrollSpeed.defl=3
+    //% buffer.defl=20
     //% group="Tilemaps"
     //% weight=0
-    export function scrollTilemapWithMouse(scrollSpeed = 3, buffer = 20){
+    export function scrollTilemapWithMouse(scrollSpeed = 3, buffer = 20) {
 
-        game.onUpdate( () => {
+        game.onUpdate(() => {
             let camX = scene.cameraProperty(CameraProperty.X);
             let camY = scene.cameraProperty(CameraProperty.Y);
             let mouseX = browserEvents.getMouseCameraX();
