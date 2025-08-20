@@ -6,7 +6,7 @@ namespace scene {
     //% buffer.defl=20
     //% group="Tilemaps"
     //% weight=0
-    export function scrollTilemapWithMouse(scrollSpeed = 3, buffer = 20) {
+    export function scrollTilemapWithMouse(scrollSpeed: number, buffer: number) {
 
         game.onUpdate(() => {
             let camX = scene.cameraProperty(CameraProperty.X);
