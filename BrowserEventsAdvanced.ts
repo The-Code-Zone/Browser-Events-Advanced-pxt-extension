@@ -233,6 +233,7 @@ namespace browserEvents{
             collider = sprites.create(colliderDot, kind);
             collider.setPosition(getMouseSceneX(), getMouseSceneY());
             collider.setFlag(SpriteFlag.Invisible, isInvisible);
+            collider.setFlag(SpriteFlag.GhostThroughWalls, true);
         })
         mouseButton.onEvent(MouseButtonEvent.Released, function deleteClick() {
             if (!clickColliderCurrentlyActive) { return };
