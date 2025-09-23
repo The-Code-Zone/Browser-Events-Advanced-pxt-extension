@@ -1,5 +1,5 @@
-// meta={"simUrl":"/simulator.html","cdnUrl":"/","version":"0.2.5","target":"arcade","targetVersion":"2.0.3","repo":"tomhausen/browser-events-advanced"}
-// total=1289428 new=8.52% cached=85.84% other=5.64%
+// meta={"simUrl":"/simulator.html","cdnUrl":"/","version":"0.2.6","target":"arcade","targetVersion":"2.0.3","repo":"tomhausen/browser-events-advanced"}
+// total=1289433 new=8.52% cached=85.84% other=5.64%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -434,7 +434,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P19135(s) {
+function _main___P22642(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -836,10 +836,10 @@ switch (step) {
     s.callLocIdx = 63; s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
-    globals.ClickCollider___4349 = (r0);
+    globals.ClickCollider___22293 = (r0);
     r0 = pxsim.image.create(1, 1);
-    globals.colliderDot___7375 = (r0);
-    r0 = pxsim_ImageMethods.fill(globals.colliderDot___7375, 1);
+    globals.colliderDot___22524 = (r0);
+    r0 = pxsim_ImageMethods.fill(globals.colliderDot___22524, 1);
     r0 = pxsim_pxtcore_mkClassInstance(browserEvents_KeyButton__C4466_VT);
     s.tmp_0 = r0;
     s.tmp_1 = browserEvents_KeyButton_constructor__P4467_mk(s);
@@ -1495,13 +1495,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P19135.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P19135.continuations = [  ]
+_main___P22642.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P22642.continuations = [  ]
 
-function _main___P19135_mk(s) {
+function _main___P22642_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P19135, depth: s.depth + 1,
+        parent: s, fn: _main___P22642, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2654,11 +2654,11 @@ switch (step) {
   case 0:
 
     s.handler___7534 = undefined;
-    s.unnamed136___U1 = undefined;
-    s.unnamed137___U2 = undefined;
+    s.unnamed412___U1 = undefined;
+    s.unnamed413___U2 = undefined;
     s.handler___7543 = undefined;
-    s.unnamed138___U4 = undefined;
-    s.unnamed139___U5 = undefined;
+    s.unnamed414___U4 = undefined;
+    s.unnamed415___U5 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -2690,15 +2690,15 @@ switch (step) {
   case 2:
     s.handler___7534 = (undefined);
     r0 = s.arg0.fields["pressListeners"];
-    s.unnamed136___U1 = (r0);
-    s.unnamed137___U2 = (0);
+    s.unnamed412___U1 = (r0);
+    s.unnamed413___U2 = (0);
   case 3:
-    s.tmp_0 = r0 = s.unnamed137___U2;
-    r0 = pxsim_Array__length(s.unnamed136___U1);
+    s.tmp_0 = r0 = s.unnamed413___U2;
+    r0 = pxsim_Array__length(s.unnamed412___U1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 4; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed136___U1, s.unnamed137___U2);
+    r0 = pxsim_Array__getAt(s.unnamed412___U1, s.unnamed413___U2);
     s.handler___7534 = (r0);
     s.tmp_2 = lambda_1_mk(s);
     s.tmp_2.argL = s.handler___7534;
@@ -2706,11 +2706,11 @@ switch (step) {
     s.callLocIdx = 69; s.pc = 12; return s.tmp_2;
   case 12:
     r0 = s.retval;
-    r0 = (s.unnamed137___U2 + 1);
-    s.unnamed137___U2 = (r0);
+    r0 = (s.unnamed413___U2 + 1);
+    s.unnamed413___U2 = (r0);
     { step = 3; continue; }
   case 4:
-    s.unnamed136___U1 = (undefined);
+    s.unnamed412___U1 = (undefined);
     { step = 10; continue; }
   case 5:
     r0 = s.arg0.fields["releaseHandler"];
@@ -2734,15 +2734,15 @@ switch (step) {
   case 7:
     s.handler___7543 = (undefined);
     r0 = s.arg0.fields["releaseListeners"];
-    s.unnamed138___U4 = (r0);
-    s.unnamed139___U5 = (0);
+    s.unnamed414___U4 = (r0);
+    s.unnamed415___U5 = (0);
   case 8:
-    s.tmp_0 = r0 = s.unnamed139___U5;
-    r0 = pxsim_Array__length(s.unnamed138___U4);
+    s.tmp_0 = r0 = s.unnamed415___U5;
+    r0 = pxsim_Array__length(s.unnamed414___U4);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 9; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed138___U4, s.unnamed139___U5);
+    r0 = pxsim_Array__getAt(s.unnamed414___U4, s.unnamed415___U5);
     s.handler___7543 = (r0);
     s.tmp_2 = lambda_1_mk(s);
     s.tmp_2.argL = s.handler___7543;
@@ -2750,11 +2750,11 @@ switch (step) {
     s.callLocIdx = 71; s.pc = 14; return s.tmp_2;
   case 14:
     r0 = s.retval;
-    r0 = (s.unnamed139___U5 + 1);
-    s.unnamed139___U5 = (r0);
+    r0 = (s.unnamed415___U5 + 1);
+    s.unnamed415___U5 = (r0);
     { step = 8; continue; }
   case 9:
-    s.unnamed138___U4 = (undefined);
+    s.unnamed414___U4 = (undefined);
   case 10:
     r0 = undefined;
     return leave(s, r0)
@@ -2771,11 +2771,11 @@ function browserEvents_KeyButton_setPressed__P4468_mk(s) {
   tmp_1: undefined,
   tmp_2: undefined,
   handler___7534: undefined,
-  unnamed136___U1: undefined,
-  unnamed137___U2: undefined,
+  unnamed412___U1: undefined,
+  unnamed413___U2: undefined,
   handler___7543: undefined,
-  unnamed138___U4: undefined,
-  unnamed139___U5: undefined,
+  unnamed414___U4: undefined,
+  unnamed415___U5: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -43686,7 +43686,7 @@ const sprites_BaseSpriteSayRenderer__C2260_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["ClickCollider___4349","colliderDot___7375","keyButtons___4539","A___4475","B___4476","C___4477","D___4478","E___4479","F___4480","G___4481","H___4482","I___4483","J___4484","K___4485","L___4486","M___4487","N___4488","O___4489","P___4490","Q___4491","R___4492","S___4493","T___4494","U___4495","V___4496","W___4497","X___4498","Y___4499","Z___4500","Zero___4501","One___4502","Two___4503","Three___4504","Four___4505","Five___4506","Six___4507","Seven___4508","Eight___4509","Nine___4510","Shift___4511","Enter___4512","CapsLock___4513","Tab___4514","Control___4515","Meta___4516","Alt___4517","ArrowUp___4518","ArrowDown___4519","ArrowLeft___4520","ArrowRight___4521","BackTick___4522","Hyphen___4523","Equals___4524","OpenBracket___4525","CloseBracket___4526","BackSlash___4527","Space___4528","PageUp___4529","SemiColon___4530","Apostrophe___4531","Comma___4532","Period___4533","ForwardSlash___4534","PageDown___4535","End___4536","Home___4537"])
+const breakpoints = setupDebugger(1, ["ClickCollider___22293","colliderDot___22524","keyButtons___4539","A___4475","B___4476","C___4477","D___4478","E___4479","F___4480","G___4481","H___4482","I___4483","J___4484","K___4485","L___4486","M___4487","N___4488","O___4489","P___4490","Q___4491","R___4492","S___4493","T___4494","U___4495","V___4496","W___4497","X___4498","Y___4499","Z___4500","Zero___4501","One___4502","Two___4503","Three___4504","Four___4505","Five___4506","Six___4507","Seven___4508","Eight___4509","Nine___4510","Shift___4511","Enter___4512","CapsLock___4513","Tab___4514","Control___4515","Meta___4516","Alt___4517","ArrowUp___4518","ArrowDown___4519","ArrowLeft___4520","ArrowRight___4521","BackTick___4522","Hyphen___4523","Equals___4524","OpenBracket___4525","CloseBracket___4526","BackSlash___4527","Space___4528","PageUp___4529","SemiColon___4530","Apostrophe___4531","Comma___4532","Period___4533","ForwardSlash___4534","PageDown___4535","End___4536","Home___4537"])
 
-return _main___P19135
+return _main___P22642
 })
