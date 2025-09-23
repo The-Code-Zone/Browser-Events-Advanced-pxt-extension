@@ -221,7 +221,7 @@ namespace browserEvents{
     let clickColliderCurrentlyActive = false;
 
     //% blockId=createColliderOnClick
-    //% block="when $mouseButton is clicked create collider that is $isInvisible of kind $kind=spritekind"
+    //% block="when $mouseButton is clicked create collider with invisibility $isInvisible of kind $kind=spritekind"
     //% group="Mouse"
     //% weight=5
     export function createColliderOnClick(mouseButton: MouseButton, isInvisible = true, kind = ClickCollider) {
