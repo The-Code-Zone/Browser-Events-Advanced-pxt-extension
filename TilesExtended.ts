@@ -30,4 +30,14 @@ namespace scene {
         })
     }
 
+    //% blockId=getTilemapLocationOfMouse
+    //% block="get tilemap location of mouse"
+    //% group="Tilemaps"
+    //% weight=0
+    export function getTilemapLocationOfMouse(): tiles.Location {
+        let x = Math.floor(browserEvents.getMouseSceneX() / 16)
+        let y = Math.floor(browserEvents.getMouseSceneY() / 16)
+        return tiles.getTileLocation(x, y)
+    }
+
 }
