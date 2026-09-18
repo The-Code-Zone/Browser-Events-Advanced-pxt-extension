@@ -3,14 +3,14 @@
     "version": "0.2.7",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "browser-events": "*"
     },
     "files": [
         "main.ts",
         "README.md",
         "BrowserEventsAdvanced.ts",
         "keyboard.ts",
-        "shims.d.ts",
         "images.g.jres",
         "images.g.ts",
         "TilesExtended.ts"
