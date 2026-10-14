@@ -65,9 +65,9 @@ namespace browserEvents{
         mouseButton.onEvent(MouseButtonEvent.Pressed, function createClick() {
             if (!clickColliderCurrentlyActive) {return};
             collider = sprites.create(colliderDot, kind);
-            collider.setPosition(getMouseSceneX(), getMouseSceneY());
             collider.setFlag(SpriteFlag.Invisible, isInvisible);
             collider.setFlag(SpriteFlag.GhostThroughWalls, true);
+            collider.setPosition(getMouseSceneX(), getMouseSceneY());
         })
         mouseButton.onEvent(MouseButtonEvent.Released, function deleteClick() {
             if (!clickColliderCurrentlyActive) { return };
